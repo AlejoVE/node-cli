@@ -11,9 +11,10 @@ const { getHolidays, validateYear, getCountryCode } = require(path.resolve(
 let country = process.argv[2];
 let today = new Date();
 let year = today.getFullYear();
+let input = process.argv;
 
 //This argument can be part of the country name or a year
-let thirdArg = process.argv[3];
+let thirdArg = input[3];
 
 if (thirdArg) {
 	//Evaluate if argument is a number or not
@@ -22,13 +23,13 @@ if (thirdArg) {
 	if (isNumber) {
 		year = Number(thirdArg);
 	} else {
-		country = `${process.argv[2]} ${thirdArg}`;
+		country = `${input[2]} ${thirdArg}`;
 	}
 }
 
-if (process.argv[4]) {
-	country = `${process.argv[2]} ${process.argv[3]}`;
-	year = Number(`${process.argv[4]}`);
+if (input[4]) {
+	country = `${input[2]} ${input[3]}`;
+	year = Number(`${input[4]}`);
 }
 
 let countryCode = getCountryCode(country);
