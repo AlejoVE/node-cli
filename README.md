@@ -15,6 +15,7 @@
 ### 🏠 [Homepage](https://github.com/AlejoVE/node-cli#readme)
 
 ### Description
+
 This package will return the holidays of the country of your choice!
 
 ## Install
@@ -28,14 +29,16 @@ npm install @alejo/holidays
 ```sh
 holidays [COUNTRY] [OPTIONAL] [YEAR]
 ```
+
 <pre>❗IMPORTANT: If you do not enter the year, the default value will be the current year.</pre>
+
 ## Example
 
 ```sh
 holidays Belgium  2003
 ```
 
-## Example whit optional value
+## Example with optional value
 
 ```sh
 holidays Puerto Rico 2007
@@ -43,7 +46,7 @@ holidays Puerto Rico 2007
 
 ## Author
 
-* Github: [@AlejoVE](https://github.com/AlejoVE)
+-  Github: [@AlejoVE](https://github.com/AlejoVE)
 
 ## 🤝 Contributing
 
