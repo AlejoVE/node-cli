@@ -14,16 +14,16 @@ let today = new Date();
 let year = today.getFullYear();
 
 //This argument can be part of the country name or a year
-let thirdArg = input[3];
+let secondArg = input[3];
 
-if (thirdArg) {
+if (secondArg) {
 	//Evaluate if argument is a number or not
-	let isNumber = Number.isInteger(parseInt(thirdArg));
+	let isNumber = Number.isInteger(parseInt(secondArg));
 
 	if (isNumber) {
-		year = Number(thirdArg);
+		year = Number(secondArg);
 	} else {
-		country = `${input[2]} ${thirdArg}`;
+		country = `${input[2]} ${secondArg}`;
 	}
 }
 
@@ -44,7 +44,6 @@ if (!isValidYear) {
 	return;
 }
 
-const myHolidays = [];
 const holidays = getHolidays(year, countryCode);
 holidays.then((data) => {
 	const myHolidays = [];
