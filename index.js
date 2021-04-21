@@ -8,10 +8,10 @@ const { getHolidays, validateYear, getCountryCode } = require(path.resolve(
 	'./helpers'
 ));
 
-let country = process.argv[2];
+let input = process.argv;
+let country = input[2];
 let today = new Date();
 let year = today.getFullYear();
-let input = process.argv;
 
 //This argument can be part of the country name or a year
 let thirdArg = input[3];
