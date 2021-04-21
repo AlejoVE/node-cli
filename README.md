@@ -37,7 +37,8 @@ holidays [COUNTRY] [OPTIONAL] [YEAR]
 ```sh
 holidays Belgium  2003
 ```
-
+## Output
+![outout](https://user-images.githubusercontent.com/59319966/115527242-2f276280-a291-11eb-9934-daea76b7aa9d.png)
 ## Example with optional value
 
 ```sh
